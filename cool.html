@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>haha</title>
+
+        <style>
+
+            body{
+                width: 420px;
+                height: 420px;
+            }
+
+            .header{
+                margin: 10px;
+                padding: 5px;
+
+                text-align: center;
+                font-weight: bold;
+                font-family: sans-serif;
+                border: 1px solid green;
+            }
+
+            #test{
+                width: 200px;
+                height: 20px;
+                background-color: lightgrey;
+                visibility: hidden;
+            }
+
+            #submit-id{
+                margin: 10px;
+                height: 25px;
+                width: 50px;
+                background-image: url('gg.png');
+                background-size: cover;
+            }
+
+            #lucky-id{
+                margin: 10px;
+                height: 25px;
+                width: 50px;
+                background-image: url('lucky.png');
+                background-size: cover;
+            }
+
+            .playerbox{
+                float: left;
+                margin: 4px;
+                width: 130px;
+                height: 80px;
+                border: 1px solid blue;
+                background-color: #9370DB;
+            }
+
+        </style>
+
+        <script src="jquery-3.2.1.js"></script>
+        <script src="content.js"></script>
+        <script src="background.js"></script>
+
+
+    </head>
+    <body>
+        hahahahahaha
+
+        <div id="header">
+            TELL US THE STREAMER U WANT WITH THE FOLLOWING NUMBER OF VIEWERS
+        </div>
+
+        <form  method="post" action="mailto:zhuoweiz@usc.edu">
+
+            <label>From</label>
+            <input type="number" id="number_low"/>
+
+            <label>to</label>
+            <input type="number" id="number_high"/>
+
+            <br />
+            <label>The streamer username u want to check</label>
+            <input type="text" id="streamername-id"/>
+
+            <!-- <input type="submit" id="submit-id" value="send form"/> -->
+            <br />
+            <button type="submit" form="form1" id="submit-id" value="Submit"></button>
+            <button id="lucky-id"></button>
+        </form>
+
+        <button id="refresh_button-id">refresh</button>
+
+        <div id="test">
+            valid viewer number input
+        </div>
+
+
+        <div class="header">
+            CHECK THE STATUS OF YOUR FAVORITE STREAMER
+        </div>
+        <div class="playerbox">
+            <label id="player-1-id">ppd</label>
+            <h3 id="status1"></h3>
+        </div>
+        <div class="playerbox">
+            <label id="player-2-id">fear</label>
+            <h3 id="status2"></h3>
+        </div>
+        <div class="playerbox">
+            <label id="player-3-id">PGL</label>
+            <h3 id="status3"></h3>
+        </div>
+        <div class="playerbox">
+            <label id="player-4-id">esl_csgo</label>
+            <h3 id="status4"></h3>
+        </div>
+        <div class="playerbox">
+            <label id="player-5-id">idk</label>
+            <h3 id="status5"></h3>
+        </div>
+        <div class="playerbox">
+            <label id="player-6-id">Riot Games</label>
+            <h3 id="status6"></h3>
+        </div>
+
+    </body>
+</html>
